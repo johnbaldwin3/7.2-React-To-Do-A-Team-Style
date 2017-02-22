@@ -1,0 +1,53 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: url('http://www.legendarytv.com/the_a-team/wallpaper/the_a_team_group_3_1024.jpg');
+  background-size: cover;
+  background-repeat: none;
+}
+
+.app-header {
+  color: #6f0909;
+  text-shadow: 0px 2px 6px rgba(75, 29, 29, 0.75);
+
+}
+
+.list-header{
+  @extend .app-header;
+}
+
+#todo-labeller{
+  @extend .app-header;
+}
+
+#title {
+  box-shadow: 0px 5px 20px 0px rgba(168, 43, 8, 0.67);
+  background-color: rgba(255, 255, 255, 0.74);
+}
+
+.list-group-item {
+  @extend #title;
+  margin: 10px;
+
+
+}
+
+#sub-button {
+  box-shadow: 0px 5px 20px 0px rgba(168, 43, 8, 0.67);
+}
