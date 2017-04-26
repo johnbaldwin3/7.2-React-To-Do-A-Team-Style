@@ -1,0 +1,56 @@
+<div className="container-fluid">
+          <header className="header-chat">
+            <h1>Chat App</h1>
+          </header>
+        </div>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+
+              <div className="chatroom">
+                <h3 className="chatroom-title">TIY GVL Chat Room</h3>
+              <div className="chatroom-messages">
+                <ChatMessageList />
+              </div>
+
+              <div className="row">
+                <div className="user-input">
+                  <ChatSubmitMessageForm />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="user-input">
+              <form action="">
+                <div className="form-group">
+                  <label id="username-labeller" htmlFor="username">Username: </label>
+                  <input type="text" className="form-control input-bar" id="username" placeholder="Username..." />
+                  <label id="password-labeller" htmlFor="password">Password: </label>
+                  <input type="password" className="form-control input-bar" id="password" placeholder="Password..." />
+                </div>
+                <input id="create-button" type="submit" className="btn btn-success" value="Create Button"/>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    )
+  }
+});
+
+var ChatSubmitMessageForm = React.createClass({
+  render: function(){
+    return (
+      <form action="">
+        <div className="form-group">
+          <label id="message-labeller" htmlFor="message">Add to the Convo... </label>
+          <input type="text" className="form-control input-bar" id="message" placeholder="Your Message..." />
+        </div>
+        <input id="sub-button" type="submit" className="btn btn-success" value="Send Msg"/>
+      </form>
+    )
+  }
+});
